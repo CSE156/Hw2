@@ -1,0 +1,54 @@
+import java.sql.Date;
+
+public class Service {
+	
+	private String productCode;
+	private String productName;
+	private String activationFee;
+	private Date startDate;
+	private Date endDate;
+	
+	public Service(String productCode, String productName, String activationFee, Date startDate, Date endDate){}
+	
+	public String getproductCode(){
+		return this.productCode;
+	}
+	
+	public String getproductName(){
+		return this.productName;
+	}
+	
+	public String getactivationFee(){
+		return this.activationFee;
+	}
+	
+	public Date getstartDate(){
+		return this.startDate;
+	}
+	
+	public Date getendDate(){
+		return this.endDate;
+	}
+	
+	public void setproductCode(String productCode) {
+	    this.productCode = productCode;
+	}
+	
+	public void setproductName(String productName) {
+	    this.productName = productName;
+	}
+	
+	public void setactivationFee(String activationFee){
+		this.activationFee = activationFee;
+	}
+	
+	public void setstartDate(Date startDate){
+		   this.startDate = startDate;
+	}
+	
+	public void setendDate(Date endDate){
+		   this.endDate = endDate;
+	}
+
+
+}
