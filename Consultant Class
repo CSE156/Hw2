@@ -1,0 +1,52 @@
+
+public class Consultant {
+	
+	private String personCode;
+	private String firstName;
+	private String lastName;
+	private Address address;
+	private Email email;
+	
+	public Consultant(String personCode, String firstName, String lastName, Address address, Email email){}
+	
+	public String getpersonCode(){
+		return this.personCode;
+	}
+	
+	public String getfirstName(){
+		return this.firstName;
+	}
+	
+	public String getlastName(){
+		return this.lastName;
+	}
+	
+	public Address getaddress(){
+		return this.address;
+	}
+	
+	public Email getemail(){
+		return this.email;
+	}
+	
+	public void setpersonCode(String personCode) {
+	    this.personCode = personCode;
+	}
+	
+	public void setfirstName(String firstName) {
+	    this.firstName = firstName;
+	}
+	
+	public void setlastName(String lastName){
+		this.lastName = lastName;
+	}
+	
+	public void setstartDate(Address address){
+		   this.address = address;
+	}
+	
+	public void setendDate(Email email){
+		   this.email = email;
+	}
+
+}
