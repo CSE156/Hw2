@@ -1,0 +1,29 @@
+package file.data;
+
+public class Email {
+	private String primEmail;
+	private String secEmail;
+	private Email email;
+	
+	public Email(String primEmail, String secEmail){
+		super();
+		this.primEmail = primEmail;
+		this.secEmail = secEmail;
+		
+	}
+	public Email getEmail(){
+		return this.email;
+	}
+	public String getPrimEmail(){
+		return primEmail;
+	}
+	public void setPrimEmail(String primEmail){
+		this.primEmail = primEmail;
+	}
+	public String getSecEmail(){
+		return secEmail;
+	}
+	public void setSecEmail(String secEmail){
+		this.secEmail = secEmail;
+	}
+}
