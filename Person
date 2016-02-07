@@ -1,0 +1,36 @@
+package file.data;
+
+public class Person {
+	private String firstName;
+	private String lastName;
+	private Address address;
+	private Email email;
+	
+	public Person(String firstName, 
+	String lastName, Address address, Email email){
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.email = email;
+	}
+	
+	public Address getAddress(){
+		return this.address;
+	}
+	public Email getEmail(){
+		return this.email;
+	}
+	public String getFirstname(){
+		return this.firstName;
+	}
+	public void setFirstName(String firstName){
+		this.firstName = firstName;
+	}
+	public String getLastName(){
+		return this.lastName;
+	}
+	public void setLastName(String lastName){
+		this.lastName = lastName;
+	}
+}
