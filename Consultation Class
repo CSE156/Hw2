@@ -1,0 +1,60 @@
+public class Consultation {
+
+	private String personCode;
+	private String productName;
+	private String hourlyFee;
+	private Consultant consultant;
+	private String hours;
+	private String serviceFee;
+	
+	public Consultation(String personCode, String productName, String hourlyFee, Consultant consultant, String hours, String serviceFee){}
+	
+	public String getpersonCode(){
+		return this.personCode;
+	}
+	
+	public String getproductName(){
+		return this.productName;
+	}
+	
+	public String gethourlyFee(){
+		return this.hourlyFee;
+	}
+	
+	public Consultant getconsultant(){
+		return this.consultant;
+	}
+	
+	public String gethours(){
+		return this.hours;
+	}
+	
+	public String getserviceFee(){
+		return this.serviceFee;
+	}
+	
+	public void setpersonCode(String personCode) {
+	    this.personCode = personCode;
+	}
+	
+	public void setproductName(String productName) {
+	    this.productName = productName;
+	}
+	
+	public void sethourlyFee(String hourlyFee){
+		this.hourlyFee = hourlyFee;
+	}
+	
+	public void setconsultant(Consultant consultant){
+		   this.consultant = consultant;
+	}
+	
+	public void sethours(String hours){
+		   this.hours = hours;
+	}
+	
+	public void setserviceFee(String serviceFee){
+		this.serviceFee = serviceFee;
+	}
+	
+}
