@@ -1,14 +1,12 @@
-import java.sql.Date;
 
-public class Service {
+public class Equipment {
 	
-	private String productCode;
+	private String productCode;   
 	private String productName;
-	private String activationFee;
-	private Date startDate;
-	private Date endDate;
+	private String price;
+	private String units;
 	
-	public Service(String productCode, String productName, String activationFee, Date startDate, Date endDate){}
+	public Equipment(String productCode, String productName, String price, String units){}
 	
 	public String getproductCode(){
 		return this.productCode;
@@ -18,16 +16,12 @@ public class Service {
 		return this.productName;
 	}
 	
-	public String getactivationFee(){
-		return this.activationFee;
+	public String getprice(){
+		return this.price;
 	}
 	
-	public Date getstartDate(){
-		return this.startDate;
-	}
-	
-	public Date getendDate(){
-		return this.endDate;
+	public String getunits(){
+		return this.units;
 	}
 	
 	public void setproductCode(String productCode) {
@@ -38,17 +32,13 @@ public class Service {
 	    this.productName = productName;
 	}
 	
-	public void setactivationFee(String activationFee){
-		this.activationFee = activationFee;
+	public void setprice(String price){
+		this.price = price;
 	}
 	
-	public void setstartDate(Date startDate){
-		   this.startDate = startDate;
+	public void setunits(String units){
+		this.units = units;
 	}
 	
-	public void setendDate(Date endDate){
-		   this.endDate = endDate;
-	}
-
-
 }
+
