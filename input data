@@ -1,0 +1,59 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import file.data.Address;
+import file.data.Email;
+import file.data.Person;
+import file.data.Product;
+
+public class InputData {
+	public ArrayList<Person> readPeople(){
+		Scanner sc = null;
+		
+		try{
+			sc = new Scanner(new File("data/Persons.dat"));
+			sc.nextLine();
+			ArrayList<Person> personList = new ArrayList<Person>();
+			
+			while(sc.hasNext()){
+				String line = sc.nextLine();
+				String data[]= line.split(";");
+				String personCode = data[0];
+				//the nammes need a delimiter to remove the comma
+				String names[] = data[1].split(",");
+				String lastName = names[0];
+				String firstName = names[1];
+				//System.out.println(names[0] + names[1]);
+				//address needs delimiters 
+				String addresses[] = data[2].split(",");
+				String street = addresses[0];
+				String city = addresses[1];
+				String state = addresses[2];
+				String zipCode = addresses[3];
+				String country = addresses[4];
+				//System.out.println(addresses[0]+addresses[1]+addresses[2]+addresses[3]);
+				//The emails need delimiters aswell
+				String emails[] = data[3].split(",");
+				String primEmail = emails[0];
+				String secEmail = emails[1];
+				System.out.println(emails[0] + emails[1]);
+				
+				
+			Address address = new Address(street,city,state,zipCode,country);
+				
+			Email email = new Email(primEmail,secEmail);
+				
+			Person person = new Person(personCode, lastName, firstName, address, email);
+				
+				personList.add(person);
+			}
+			sc.close();
+			return personList;
+		} catch(FileNotFoundException e){
+			e.printStackTrace();
+			return null;
+		}
+		
+	}
