@@ -1,0 +1,40 @@
+public class Customers {
+
+		private String customerCode;
+		private Consultant contact;
+		private String name;
+		private Address address;
+	
+		public Customers(String customerCode, Consultant contact, String name, Address address){
+		this.customerCode = customerCode;
+		this.contact = contact;
+		this.name = name;
+		this.address = address;
+		}
+		
+		public String getcustomerCode(){
+			return this.customerCode;
+		}
+		public Consultant getcontact(){
+			return this.contact;
+		}
+		public String getname(){
+			return this.name;
+		}
+		public Address getaddress(){
+			return this.address;
+		}
+		public void setcustomernCode(String customerCode) {
+		    this.customerCode = customerCode;
+		}
+		public void setcontact(Consultant contact) {
+		    this.contact = contact;
+		}
+		public void setname(String name) {
+		    this.name = name;
+		}
+		public void setaddress(Address address) {
+		    this.address = address;
+		}
+			
+}
