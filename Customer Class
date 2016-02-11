@@ -1,21 +1,24 @@
+
 public class Customers {
 
 		private String customerCode;
-		private Consultant contact;
+		private Person contact;
 		private String name;
 		private Address address;
 	
-		public Customers(String customerCode, Consultant contact, String name, Address address){
+		public Customers(String customerCode, Person contact, String name, Address address){
+		super();
 		this.customerCode = customerCode;
 		this.contact = contact;
 		this.name = name;
 		this.address = address;
 		}
 		
+		
 		public String getcustomerCode(){
 			return this.customerCode;
 		}
-		public Consultant getcontact(){
+		public Person getcontact(){
 			return this.contact;
 		}
 		public String getname(){
@@ -27,7 +30,7 @@ public class Customers {
 		public void setcustomernCode(String customerCode) {
 		    this.customerCode = customerCode;
 		}
-		public void setcontact(Consultant contact) {
+		public void setcontact(Person contact) {
 		    this.contact = contact;
 		}
 		public void setname(String name) {
